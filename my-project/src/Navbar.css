@@ -1,0 +1,9 @@
+
+
+
+@media(min-width:470px){
+    .sc-link{
+        backdrop-filter: blur(10px);
+        /* this is for the blur background effect */
+    }
+}

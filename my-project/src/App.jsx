@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react"
+import Hero from "./Hero"
+
+import "./App.css"
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const currentWidth = window.innerWidth
+  const [screen, setScreen] = React.useState(currentWidth)
+  // const mediaQuery =
+
+  window.addEventListener("resize", function(){
+    setScreen(window.innerWidth)
+  })
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <div className='root'>
+      <Hero screen={screen}/>
+    </div>
   )
 }
 
