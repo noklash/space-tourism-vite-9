@@ -1,9 +1,30 @@
 
 
 
-@media(min-width:470px){
+/* @media(min-width:470px){ */
     .sc-link{
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         /* this is for the blur background effect */
     }
+/* } */
+
+.navbar  ul  li a {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar  ul  li a::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+    transition: 0.3s;
+}
+
+.navbar  ul  li a:hover::after{
+    width: 100%;
+
 }

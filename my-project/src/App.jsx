@@ -1,7 +1,7 @@
 import React from "react"
-import Hero from "./Hero"
 
 import "./App.css"
+import Page from "./Page"
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className='root'>
-      <Hero screen={screen}/>
+      <Page screen={screen}/>
     </div>
   )
 }
