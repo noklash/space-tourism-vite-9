@@ -2,9 +2,11 @@ import React from "react"
 
 import "./App.css"
 import Page from "./Page"
+import Navbar from "./Navbar"
+// import Destination from "./Destination"
 
 
-function App() {
+function App(props) {
   const currentWidth = window.innerWidth
   const [screen, setScreen] = React.useState(currentWidth)
   // const mediaQuery =
@@ -15,7 +17,9 @@ function App() {
 
   return (
     <div className='root'>
+      {/* <Navbar sccreen={screen}/> */}
       <Page screen={screen}/>
+      {/* <Destination/> */}
     </div>
   )
 }
