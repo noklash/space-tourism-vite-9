@@ -13,7 +13,7 @@
     margin-top: 5rem;
 }
 
-.circle{
+.circlie{
         width: 14.375rem;
         height: 14.375rem;
         border-radius: 50%;
@@ -44,7 +44,7 @@
     .explore{
         width: 50vw;
         padding: 0 4rem;
-        margin-top: 8rem;
+        margin-top: 7rem;
     }
     .question--box{
         width: 50vw;
@@ -78,7 +78,7 @@
         width: 50vw;
         padding: 0 10rem;
         height: 20rem;
-        margin-top: 10rem;
+        margin-top: 5rem;
         /* width: 15rem */
     }
     .question--box{

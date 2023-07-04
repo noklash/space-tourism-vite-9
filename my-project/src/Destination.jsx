@@ -2,14 +2,20 @@ import React from "react";
 import Data from "./data.json"
 import "./Destination.css"
 
-import   "./assets/destination/image-moon.png";
+import  Moon from  "./assets/destination/image-moon.png";
+import Titan from "./assets/destination/image-titan.png";
+import Europa from "./assets/destination/image-europa.png";
+import Mars from "./assets/destination/image-mars.png";
 import Navbar from "./Navbar"; 
 
 
 export default function Destination(){
     const [each, setEach] = React.useState(0)
-    // const select = [0, 1, 2, 3]
-    // const each = 
+
+    // since the JSON images are not rendering i imported them manually and set them in an array in other to access them 
+    // using each state
+    const destinationImg = [Moon, Mars, Europa, Titan]
+    
     
     function selectMoon(){
         setEach(0)
@@ -31,11 +37,11 @@ export default function Destination(){
         <div>
             <Navbar/>
         
-        <div className="destination mt-6 text-white ">
+        <div className="destination  text-white ">
             
             <h3 className="sub-heading mx-6  text-left">PICK YOUR DESTINATIONS</h3>
             <div className="destination-body mr-10">
-                <div className="image-box"> <img src={Data.destinations[each].images.png} /></div>
+                <div className="image-box"> <img src={destinationImg[each]} /></div>
                 {/* {console.log(`${Data.destinations[each].images.png}`)} */}
                 <div className="choose nav ">
                     <ul className="flex mb-5 mr-auto ml-auto">

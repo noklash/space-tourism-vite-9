@@ -25,8 +25,8 @@ export default function Navbar(props){
     const whichScreenLink = screen > 875 ? desktopLinks : tabletLinks
 
    const screenLink = whichScreenLink.map((each) =>{
-     return <a href={each.location} key={each.key}><li className="mx-2" >{each.number} {each.title}</li></a>
-        
+    //  return <a href={each.location} key={each.key}><li className="mx-2" >{each.number} {each.title}</li></a>
+    return <li className="mx-2" ><a href={each.location} key={each.key}>{each.number} {each.title}</a> </li> 
     })
     // onClick={() => navigate(link.location)}
    function openMobileNav(){

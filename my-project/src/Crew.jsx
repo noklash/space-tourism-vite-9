@@ -1,18 +1,18 @@
 import React from "react";
 import "./Crew.css"
 import Data from "./data.json";
-import "./assets/crew/image-douglas-hurley.webp";
-import "./assets/crew/image-anousheh-ansari.webp";
-import "./assets/crew/image-victor-glover.webp";
-import  "./assets/crew/image-mark-shuttleworth.webp"
+import Douglas from "./assets/crew/image-douglas-hurley.webp";
+import Anousheh from "./assets/crew/image-anousheh-ansari.webp";
+import Victor from "./assets/crew/image-victor-glover.webp";
+import  Mark from "./assets/crew/image-mark-shuttleworth.webp"
 import Navbar from "./Navbar";
 
 
 export default function Crew(){
 
     const [each, setEach] = React.useState(0)
-    // const select = [0, 1, 2, 3]
-    // const each = 
+    const selectCrewImg = [Douglas, Mark, Victor, Anousheh]
+     
     
     function selectDouglas(){
         setEach(0)
@@ -34,7 +34,7 @@ export default function Crew(){
         <div className="crew-whole pb-6">
             <Navbar/>
             
-        <div className="crew my-12 pt-10 text-white">
+        <div className="crew my-2  text-white">
             
             
             {/* <div className="crew-body my-12">
@@ -64,7 +64,7 @@ export default function Crew(){
                 <div className="crew-body my-12">
              
                 <div className="image-box">
-                    <img src={Data.crew[each].images.webp}/>
+                    <img src={selectCrewImg[each]}/>
                 </div>
                 
             </div>

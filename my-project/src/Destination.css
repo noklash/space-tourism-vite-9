@@ -14,7 +14,7 @@
 } */
 
 .sub-heading{
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 1.1rem;
 }
 
@@ -95,12 +95,13 @@ ul > li{
     }
     .destination-body{
         display: flex;
-        padding-top: 2.5rem;
+        padding-top: 0rem;
         padding-bottom: 1rem;
     }
-    ul > li{
+    /* ul > li{
         margin-right: 1rem;
-    }
+        cursor: pointer;
+    } */
     .description{
         font-size: 1.09rem;
         margin-bottom: 1rem;
@@ -117,4 +118,25 @@ ul > li{
         margin-right: 2rem;
     }
     
+}
+
+.choose ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+.choose ul li::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* bottom: 8px; */
+    transition: 0.3s;
+}
+
+.choose ul li:hover::after{
+    width: 100%;
 }

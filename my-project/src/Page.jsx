@@ -13,6 +13,7 @@ import Crew from "./Crew";
 import Technology from "./Technology";
 
 
+
 export default function Page(props){
     return (
         <div className="page pt-0 mt-0">
@@ -28,7 +29,7 @@ export default function Page(props){
                         <Route path="titan" element={<Titan/>}/> */}
                     </Route>
                     <Route path="/Crew" element={<Crew/>}/>
-                    <Route path="/Technology" element={<Technology/>}/>
+                    <Route path="/Technology" element={<Technology screen={props.screen}/>}/>
                     {/* <Redirect to="./Hero" /> */}
                 </Routes>
             </Router>
