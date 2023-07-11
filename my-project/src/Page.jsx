@@ -16,7 +16,7 @@ import Technology from "./Technology";
 
 export default function Page(props){
     return (
-        <div className="page pt-0 mt-0">
+        <div className="page pb-4 mt-0">
             {/* <Navbar screen={props.screen}/> */}
             {/* <Hero screen={props.screen}/> */}
             <Router>
