@@ -46,7 +46,7 @@ export default function Crew(){
             </div> */}
                 
                 <div className="details-section">
-                <h5 className="pb-8 mt-8 text-left mx-6"> 02 MEET OUR CREW</h5>
+                <h5 className="pb-8 mt-12 text-left mx-6"> 02 MEET OUR CREW</h5>
                     <div className="member-details mx-6">
                         <h4 className="role"> {Data.crew[each].role} </h4>
                         <h2 className="name"> {Data.crew[each].name} </h2>

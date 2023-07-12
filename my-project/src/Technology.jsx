@@ -34,21 +34,21 @@ export default function Technology(props){
         <div className="technology pb-12">
            <Navbar/>
            <div className="text-white">
-                <h4 className="mx-16 my-2 font-bold"> 03 SPACE LUNCH 101</h4>
+                <h4 className="mx-16 my-4 font-bold"> 03 SPACE LUNCH 101</h4>
                 <div className="tech-body">
-                    <div className="flex">
-                        <div className="circla-box mx-8">
+                    <div className="block other-details">
+                        <div className="circla-box mx-8 flex">
                             <div className="circla mx-6 text-center" onClick={selectOne}>1</div>
                             <div className="circla mx-6 text-center" onClick={selectTwo}>2</div>
                             <div className="circla mx-6 text-center" onClick={selectThree}>3</div>
                         </div>
-                        <div className="details-box">
-                            <p className="my-2 intro">THE TECHNOLOGY...</p>
+                        <div className="details-box ">
+                            <p className="my-4 intro">THE TECHNOLOGY...</p>
                             <h3 className="name">{Data.technology[each].name}</h3>
                             <p>{Data.technology[each].description}</p>
                         </div>
                     </div>
-                    <div className="image-box">
+                    <div className="image-box mx-12">
                         <img src={whichOne[each]}/>
                     </div>
 

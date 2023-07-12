@@ -1,6 +1,6 @@
 import React from "react";
 // import { useNavigate } from 'react-router-dom'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Logo from "./assets/shared/logo.svg";
 import Hamburger from "./assets/shared/icon-hamburger.svg";
 import Close  from "./assets/shared/icon-close.svg";
@@ -26,8 +26,13 @@ export default function Navbar(props){
 
    const screenLink = whichScreenLink.map((each) =>{
     //  return <a href={each.location} key={each.key}><li className="mx-2" >{each.number} {each.title}</li></a>
-    return <li className="mx-2" ><a href={each.location} key={each.key}>{each.number} {each.title}</a> </li> 
+    return <li className="mx-2" key={each.key}><NavLink to={each.location}  className={({isActive}) =>{
+        // console.log(each.location + ' ' + isActive)
+        return (isActive ? 'navEffect' : ' ')
+    }}>{each.number} {each.title}</NavLink> </li> 
     })
+
+    // navlink is new it was anchor tag before AND HREF IS NOW TO
     // onClick={() => navigate(link.location)}
    function openMobileNav(){
     document.getElementById("mobileNav").style.width = "100%"
@@ -39,7 +44,7 @@ export default function Navbar(props){
 //    function openDestina(){
 //     Destination
 //    }
-    console.log(screen)
+    // console.log(screen)
     return(
         <div className="navbar flex pt-4 pb-6">
             <div className="mr-auto my-8 ml-8"><img src={Logo}/></div>

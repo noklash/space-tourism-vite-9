@@ -17,9 +17,21 @@
     font-size: 2.5rem;
     font-weight: 500;
 }
+.details-box{
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
 
-
-@media(min-width:475){
+.circla{
+    cursor: pointer;
+    height: 3rem ;
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 1rem;
+    padding-top: .7rem;
+}
+@media(min-width:765px){
     .technology{
         width: 100%;
         height: 100%;
@@ -30,7 +42,13 @@
     }
     .tech-body{
         display: flex;
+        padding-bottom: 5rem;
     }
+
+    .image-box{
+        min-width: 40vw;
+    }
+
 }
 
 
@@ -47,13 +65,12 @@
     .tech-body{
         display: flex;
     }
+
+    /* .img-box{
+        max-width: 50%;
+    }
+    .other-details{
+        width: 50vw;
+    } */
 }
 
-.circla{
-    height: 3rem ;
-    width: 3rem;
-    border: 1px solid white;
-    border-radius: 50%;
-    margin-top: 1rem;
-    padding-top: .7rem;
-}

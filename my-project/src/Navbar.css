@@ -22,8 +22,8 @@
     background-color: aliceblue;
     position: absolute;
     left: 0;
-    bottom: -19px;
-    /* bottom: 8px; */
+    bottom: -15px;
+    
     transition: 0.3s;
 }
 
@@ -32,6 +32,22 @@
 
 }
 
+
+/* new to test */
+/* .navEffect{
+    position: relative;
+
+    
+} */
+
+.navEffect{
+   text-decoration-line: underline;
+   text-decoration-thickness: 4px;
+   text-underline-offset: 15px;
+}
+
+ 
+/* test stop */
 .overlay{
     height: 100%;
     /* display: block; */
