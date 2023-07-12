@@ -9,7 +9,7 @@ import Navbar from "./Navbar"
 function App(props) {
   const currentWidth = window.innerWidth
   const [screen, setScreen] = React.useState(currentWidth)
-  // const mediaQuery =
+  
 
   window.addEventListener("resize", function(){
     setScreen(window.innerWidth)
