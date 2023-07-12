@@ -48,7 +48,7 @@ export default function Technology(props){
                             <p>{Data.technology[each].description}</p>
                         </div>
                     </div>
-                    <div className="image-box mx-12">
+                    <div className="image-box mx-12 ">
                         <img src={whichOne[each]}/>
                     </div>
 

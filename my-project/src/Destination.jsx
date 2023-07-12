@@ -61,14 +61,14 @@ export default function Destination(){
                         <p>{Data.destinations[each].description}</p>
                     </div>
                     <hr></hr>
-                    <div className="flex pb-6  est">
+                    <div className="flex pb-6 est">
                         <div className="mr-auto">
                             <h5 className="">EST. DISTANCE</h5>
                             <h3 className="est-value">{Data.destinations[each].distance}</h3>
                         </div>
                         <div className="travel">
                             <h5 className="">EST. TRAVEL TIME</h5>
-                            <h3 className="est-value">{Data.destinations[each].travel}</h3>
+                            <h3 className="est-value ">{Data.destinations[each].travel}</h3>
                         </div>
                     </div>
                 </div>
