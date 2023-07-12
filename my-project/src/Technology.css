@@ -31,6 +31,12 @@
     margin-top: 1rem;
     padding-top: .7rem;
 }
+
+.circla:hover{
+    background-color: aliceblue;
+    color: black;
+    font-weight: 700;
+}
 @media(min-width:765px){
     .technology{
         width: 100%;
